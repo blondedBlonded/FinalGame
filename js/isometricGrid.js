@@ -82,10 +82,10 @@ class IsometricGrid {
         // Fill the tile based on its properties
         if (this.highlightedTile && this.highlightedTile.x === x && this.highlightedTile.y === y) {
             // Highlighted tile
-            this.ctx.fillStyle = tile.walkable ? '#5F5F41' : '#5F5F41';
+            this.ctx.fillStyle = tile.walkable ? '#5F5F41' : '#000000';
         } else {
             // Normal tile
-            this.ctx.fillStyle = tile.walkable ? '#222222' : '#222222';
+            this.ctx.fillStyle = tile.walkable ? '#222222' : '#000000';
         }
         
         this.ctx.fill();
